@@ -1,0 +1,96 @@
+/* :root {
+  --ifm-font-family-base: 'Raleway', sans-serif;
+
+  --ifm-color-primary: #c6ffe6;
+  --ifm-color-primary-dark: #a3dbca;
+  --ifm-color-primary-darker: #87c2b2;
+  --ifm-color-primary-light: #e0fff2;
+  --ifm-color-primary-lighter: #f4fffb;
+
+  --ifm-background-color: #02071b;
+  --ifm-navbar-background-color: #02071b;
+  --ifm-footer-background-color: #02071b;
+
+  --ifm-card-background-color: #1b352c;
+  --ifm-hover-overlay: rgba(198, 255, 230, 0.1);
+
+  --accent-hot-pink: #ff0055;
+  --accent-soft-yellow: #ffffa1;
+} */
+
+:root {
+  --ifm-font-family-base: 'Raleway', sans-serif;
+
+  /* COLORS */
+  --color-bg: #02071b;
+  --color-bg-alt: #1b352c;
+  /* --color-text: #c6ffe6; */
+  --color-text: #fff;
+  --color-accent: #ff0055;
+  /* --color-warning: #ffffa1; */
+  --color-warning: #fff;
+
+
+  /* Docusaurus tokens */
+  --ifm-background-color: var(--color-bg);
+  --ifm-navbar-background-color: var(--color-bg);
+  --ifm-font-color-base: var(--color-text);
+  --ifm-color-primary: var(--color-accent);
+  --ifm-color-primary-dark: #d10048;
+  --ifm-color-primary-light: #ff2a79;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #02071b;
+  --ifm-navbar-background-color: #02071b;
+  --ifm-card-background-color: #1b352c;
+}
+
+/* Navbar link hover */
+.navbar__link:hover {
+  color: var(--color-warning);
+}
+
+/* Active Sidebar Link */
+.menu__link--active {
+  color: var(--color-accent) !important;
+  font-weight: 600;
+}
+
+/* Sidebar Background */
+.theme-doc-sidebar-menu {
+  background: var(--color-bg);
+}
+
+/* Code blocks */
+.codeBlockContainer {
+  border-radius: 10px;
+  background: #111a33 !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--color-warning);
+}
+
+/* Body text */
+p, li {
+  color: var(--color-text);
+
+}
+
+a:hover {
+  color: var(--accent-hot-pink);
+  text-shadow: 0 0 8px rgba(255, 0, 85, 0.6);
+  transition: 0.2s ease;
+}
+
+.navbar__logo img {
+  height: 50px !important; /* default is around 32px */
+  width: auto !important;
+}
+
+.navbar__brand:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "a1ae7461-acd8-4692-a94f-6d11501b0f73",
+		"name": "WTH-Task-Tracker",
+		"description": "This API allows developers to integrate and manage authentication, task tracking, user roles, and reporting features for our project management system. It provides secure JWT-based authentication, robust access control, and a flexible task management module with progress tracking, attachments, and reporting.\n\nThe API is REST-based and built with **Node.js**, **Express**, and **MongoDB**. It supports both **member** and **admin** roles to ensure proper permission control.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48198252",
+		"_collection_link": "https://supply-engineer-38888229-1032982.postman.co/workspace/5285229a-5771-42a7-8ef3-e676758e5aaf/collection/48198252-a1ae7461-acd8-4692-a94f-6d11501b0f73?action=share&source=collection_link&creator=48198252"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Toyibat Adele\",\n    \"email\": \"abdulbasirtoyiba@gmail.com\",\n    \"password\": \"Admin@2025\",\n    \"profileImageUrl\": \"\",\n    \"adminInviteToken\": \"\" // admin token represents admin, if the field is empty, the user role will be a member\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/auth/register",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						},
+						"description": "Creates a new user account by accepting a name, email, and password.\n\nIf successful, the endpoint returns a JWT token that can be used to authenticate future requests. Duplicate email addresses are not allowed."
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"erinlejhimmy@gmail.com\",\n    \"password\": \"Backspace@2023\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/auth/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "Authenticates an existing user by validating email and password credentials.\n\nReturns a signed JWT token on success, which is used for accessing protected resources."
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "Fetches the profile of the currently logged-in user based on the token provided in the Authorization header."
+					},
+					"response": []
+				}
+			],
+			"description": "The Authentication endpoints handle user account creation, login, profile management, and role-based access control.\n\nThese endpoints use **JWT (Bearer tokens)** to protect private routes and ensure only authenticated users can access sensitive resources.\n\n**Key Features:**\n\n- Secure JWT-based login and registration.\n    \n- Fetching authenticated user details.\n    \n- Admin-only user invitation.",
+			"auth": {
+				"type": "bearer"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [],
+			"description": "The Task endpoints manage task creation, assignment, updates, and progress tracking.\n\nEach task can have a title, description, due date, priority, checklist, attachments, and assigned users.\n\nAdmins can view all tasks, while regular members can only view and update their assigned tasks.\n\n**Key Features:**\n\n- Create, view, update, and delete tasks.\n    \n- Assign tasks to users or groups.\n    \n- Track progress and checklist items.\n    \n- File attachments and due date management.\n    \n- Admin visibility into all tasks."
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
