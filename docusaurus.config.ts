@@ -78,7 +78,7 @@ const config: Config = {
       // },
       title: 'Task Manager API',
       items: [
-        // { to: 'docs/intro', label: 'Introduction', position: 'left' },
+        { to: 'docs/intro', label: 'Introduction', position: 'left' },
         { to: 'docs/api/authentication', label: 'API', position: 'left' },
         { href: 'https://github.com/WriteTech-Hub', label: 'GitHub', position: 'right' },
       ],
