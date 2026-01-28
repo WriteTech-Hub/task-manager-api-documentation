@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "id": "test-register-endpoint-structure",
+      "description": "Verify the register endpoint documentation is accurate",
+      "steps": [
+        {
+          "description": "Document that POST /api/auth/register should accept name, email, password",
+          "checkLink": "https://task-manager-api-documentation.vercel.app/docs/api/authentication#1-register-user"
+        }
+      ]
+    }
+  ]
+}

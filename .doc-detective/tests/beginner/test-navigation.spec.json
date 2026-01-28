@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/doc-detective/doc-detective/main/schemas/jsonSchema.json",
+  "tests": [
+    {
+      "id": "test-homepage-navigation",
+      "description": "Test that the documentation homepage loads successfully",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "https://task-manager-api-documentation.vercel.app/"
+        },
+        {
+          "action": "find",
+          "selector": "h1",
+          "description": "Verify the main heading exists"
+        },
+        {
+          "action": "find",
+          "selector": "text/Task Manager API",
+          "description": "Verify page title contains 'Task Manager API'"
+        }
+      ]
+    },
+    {
+      "id": "test-intro-page",
+      "description": "Test that the introduction page loads",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "https://task-manager-api-documentation.vercel.app/docs/intro"
+        },
+        {
+          "action": "find",
+          "selector": "h1",
+          "matchText": "Welcome to the Task Manager API Documentation"
+        },
+        {
+          "action": "saveScreenshot",
+          "path": "tests/results/intro-page.png",
+          "description": "Capture intro page"
+        }
+      ]
+    }
+  ]
+}

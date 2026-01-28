@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/doc-detective/doc-detective/main/schemas/jsonSchema.json",
+  "tests": [
+    {
+      "id": "master-beginner-test-suite",
+      "description": "Run all beginner-level tests",
+      "steps": [
+        {
+          "action": "runShell",
+          "command": "npx doc-detective runTests --input tests/beginner/test-navigation.spec.json"
+        },
+        {
+          "action": "runShell",
+          "command": "npx doc-detective runTests --input tests/beginner/test-links.spec.json"
+        },
+        {
+          "action": "runShell",
+          "command": "npx doc-detective runTests --input tests/beginner/test-screenshots.spec.json"
+        }
+      ]
+    }
+  ]
+}

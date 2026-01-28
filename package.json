@@ -6,6 +6,8 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "test:docs": "doc-detective runTests",
+    "test:docs:beginner": "doc-detective runTests --input tests/beginner/ --recursive",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -30,6 +32,7 @@
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "doc-detective": "^3.6.3",
     "typescript": "~5.6.2"
   },
   "browserslist": {

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/doc-detective/doc-detective/main/schemas/jsonSchema.json",
+  "tests": [
+    {
+      "id": "test-api-navigation-links",
+      "description": "Test that API documentation links navigate correctly",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "https://task-manager-api-documentation.vercel.app/docs/intro"
+        },
+        {
+          "action": "find",
+          "selector": "a[href*='authentication']",
+          "click": true,
+          "description": "Click on Authentication API link"
+        },
+        {
+          "action": "checkLink",
+          "url": "https://task-manager-api-documentation.vercel.app/docs/api/authentication",
+          "description": "Verify we're on the Authentication page"
+        },
+        {
+          "action": "find",
+          "selector": "h1",
+          "matchText": "Authentication API",
+          "description": "Verify Authentication page heading"
+        }
+      ]
+    },
+    {
+      "id": "test-tasks-api-link",
+      "description": "Test Tasks API link works",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "https://task-manager-api-documentation.vercel.app/docs/intro"
+        },
+        {
+          "action": "find",
+          "selector": "a[href*='tasks']",
+          "click": true
+        },
+        {
+          "action": "checkLink",
+          "url": "https://task-manager-api-documentation.vercel.app/docs/api/tasks"
+        },
+        {
+          "action": "find",
+          "selector": "h1",
+          "matchText": "Tasks API"
+        }
+      ]
+    }
+  ]
+}

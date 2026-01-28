@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/doc-detective/doc-detective/main/schemas/jsonSchema.json",
+  "tests": [
+    {
+      "id": "test-search-functionality",
+      "description": "Test that search bar accepts input",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "https://task-manager-api-documentation.vercel.app"
+        },
+        {
+          "action": "find",
+          "selector": "input[type='search'], input[placeholder*='Search']",
+          "description": "Locate search input"
+        },
+        {
+          "action": "typeKeys",
+          "keys": ["authentication"],
+          "description": "Type 'authentication' into search"
+        },
+        {
+          "action": "wait",
+          "duration": 1000
+        },
+        {
+          "action": "saveScreenshot",
+          "path": "tests/results/search-results.png"
+        }
+      ]
+    }
+  ]
+}
