@@ -88,8 +88,7 @@ Creates a new task in the system.
 }
 ```
 
-![Postman Sample]("/docs/assets/image-one.jpg")
-
+![Postman Sample](../assets/image-one.jpg)
 ---
 
 ## 2. Get Tasks (Filtered by Role)
