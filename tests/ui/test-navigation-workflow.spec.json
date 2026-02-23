@@ -1,0 +1,72 @@
+{
+  "tests": [
+    {
+      "runOn": [
+        {
+          "platforms": ["mac"],
+          "browsers": ["chrome"]
+        }
+      ],
+      "steps": [
+        {
+          "description": "Start at homepage",
+          "goTo": "https://task-manager-api-documentation.vercel.app/"
+        },
+        {
+          "description": "Verify homepage title exists",
+          "find": "h1"
+        },
+        {
+          "description": "Take homepage screenshot",
+          "screenshot": "./tests/results/01-homepage.png"
+        },
+        {
+          "description": "Click Introduction link in navbar",
+          "find": {
+            "selector": "a[href*='intro']",
+            "click": true
+          }
+        },
+        {
+          "description": "Wait for page load",
+          "wait": 2000
+        },
+        {
+          "description": "Verify intro page heading",
+          "find": "Welcome"
+        },
+        {
+          "description": "Take intro page screenshot",
+          "screenshot": "./tests/results/02-intro-page.png"
+        },
+        {
+          "description": "Click Authentication API link",
+          "find": {
+            "selector": "a[href*='authentication']",
+            "click": true
+          }
+        },
+        {
+          "description": "Wait for navigation",
+          "wait": 2000
+        },
+        {
+          "description": "Verify Authentication page loaded",
+          "find": "Authentication API"
+        },
+        {
+          "description": "Take auth page screenshot",
+          "screenshot": "./tests/results/03-auth-page.png"
+        },
+        {
+          "description": "Verify the endpoints table exists",
+          "find": "table"
+        },
+        {
+          "description": "Take final screenshot of table",
+          "screenshot": "./tests/results/04-endpoints-table.png"
+        }
+      ]
+    }
+  ]
+}

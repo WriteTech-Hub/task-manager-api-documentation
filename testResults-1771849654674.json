@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 0,
+      "fail": 1,
+      "warning": 0,
+      "skipped": 0
+    },
+    "tests": {
+      "pass": 0,
+      "fail": 1,
+      "warning": 0,
+      "skipped": 0
+    },
+    "contexts": {
+      "pass": 0,
+      "fail": 1,
+      "warning": 0,
+      "skipped": 0
+    },
+    "steps": {
+      "pass": 0,
+      "fail": 1,
+      "warning": 0,
+      "skipped": 3
+    }
+  },
+  "specs": [
+    {
+      "result": "FAIL",
+      "specId": "9ba85951-0528-4475-b623-6802efea4935",
+      "tests": [
+        {
+          "result": "FAIL",
+          "testId": "0fc16b47-7172-425c-b1bc-f6c1f786c332",
+          "contexts": [
+            {
+              "result": "FAIL",
+              "contextId": "1a146c75-4c51-4b7a-a6e8-6d82be1c1dad",
+              "platform": "mac",
+              "steps": [
+                {
+                  "result": "FAIL",
+                  "resultDescription": "Couldn't set variables. Invalid file.",
+                  "description": "Load environment variables from .env file",
+                  "loadVariables": "/Users/erin/Desktop/Personal/wth-task-manager-api-documentation/tests/advanced/.env",
+                  "stepId": "9e04a8b2-7488-4d95-a0d7-91f3745da392"
+                },
+                {
+                  "description": "Test intro page using variable",
+                  "checkLink": "$API_BASE_URL",
+                  "stepId": "bbfbffd7-e2eb-4bd9-a71b-8815b6f27a00",
+                  "result": "SKIPPED",
+                  "resultDescription": "Skipped due to previous failure in context."
+                },
+                {
+                  "description": "Test authentication API endpoint documentation",
+                  "httpRequest": {
+                    "url": "$API_BASE_URL/docs/api/authentication",
+                    "method": "GET",
+                    "statusCodes": [
+                      200
+                    ]
+                  },
+                  "stepId": "5baf9c0a-3c23-4efb-8100-0338985a3623",
+                  "result": "SKIPPED",
+                  "resultDescription": "Skipped due to previous failure in context."
+                },
+                {
+                  "description": "Test tasks API endpoint documentation",
+                  "httpRequest": {
+                    "url": "$API_BASE_URL/docs/api/tasks",
+                    "method": "GET",
+                    "statusCodes": [
+                      200
+                    ]
+                  },
+                  "stepId": "692b5ba5-405e-4c3e-aed4-f63b18f665e6",
+                  "result": "SKIPPED",
+                  "resultDescription": "Skipped due to previous failure in context."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

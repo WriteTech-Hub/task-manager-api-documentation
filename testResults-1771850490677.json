@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "tests": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "contexts": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "steps": {
+      "pass": 5,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    }
+  },
+  "specs": [
+    {
+      "result": "PASS",
+      "specId": "45d0542e-3382-4256-ade1-e87792b92585",
+      "tests": [
+        {
+          "result": "PASS",
+          "testId": "6c969050-52b7-48c9-b14e-d54073e4e022",
+          "detectSteps": true,
+          "contexts": [
+            {
+              "result": "PASS",
+              "contextId": "6dc15fc3-c600-45c3-aa41-33fb42bc1ec6",
+              "platform": "mac",
+              "steps": [
+                {
+                  "result": "PASS",
+                  "resultDescription": "Set variables.",
+                  "description": "Load environment variables from .env file",
+                  "loadVariables": "/Users/erin/Desktop/Personal/wth-task-manager-api-documentation/tests/advanced/.env",
+                  "stepId": "562f0476-f8e0-43a7-a12c-788de32ba5a4"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "description": "Verify homepage is accessible",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app"
+                  },
+                  "stepId": "650cdd58-b869-419b-9b3e-96a94395557a"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "description": "Verify authentication page loads",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/authentication"
+                  },
+                  "stepId": "8479b5da-c235-4a97-87a6-0858f1aed5f3"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "description": "Verify tasks page loads",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/tasks"
+                  },
+                  "stepId": "2f3c51c2-feb5-4b4e-ac65-cdcd2dae6f9c"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "description": "Verify users page loads",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/users"
+                  },
+                  "stepId": "9b759e9c-881b-41f3-adb2-19c293b013ab"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

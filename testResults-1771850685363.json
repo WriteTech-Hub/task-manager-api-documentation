@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "tests": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "contexts": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "steps": {
+      "pass": 4,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    }
+  },
+  "specs": [
+    {
+      "result": "PASS",
+      "specId": "7d7423c3-a227-40fe-8ce7-cdbf2d7bfe68",
+      "tests": [
+        {
+          "result": "PASS",
+          "testId": "6612f404-8b80-4dbb-aef8-25850bff7b85",
+          "detectSteps": true,
+          "contexts": [
+            {
+              "result": "PASS",
+              "contextId": "6f6aab1f-00b5-4033-97a3-5fa27370a3db",
+              "platform": "mac",
+              "steps": [
+                {
+                  "outputs": {
+                    "exitCode": 0,
+                    "stdio": {
+                      "stdout": "v24.12.0",
+                      "stderr": ""
+                    }
+                  },
+                  "result": "PASS",
+                  "resultDescription": "Executed command.",
+                  "description": "Verify Node.js is installed",
+                  "runShell": {
+                    "command": "node --version",
+                    "exitCodes": [
+                      0
+                    ],
+                    "maxVariation": 0
+                  },
+                  "variables": {},
+                  "stepId": "136902eb-2c7b-4d7c-b331-c334a1f6cb5b"
+                },
+                {
+                  "outputs": {
+                    "exitCode": 0,
+                    "stdio": {
+                      "stdout": "11.6.2",
+                      "stderr": ""
+                    }
+                  },
+                  "result": "PASS",
+                  "resultDescription": "Executed command.",
+                  "description": "Verify npm is installed",
+                  "runShell": {
+                    "command": "npm --version",
+                    "exitCodes": [
+                      0
+                    ],
+                    "maxVariation": 0
+                  },
+                  "variables": {},
+                  "stepId": "2d5ca389-278c-48e2-8297-f54fcc90b14f"
+                },
+                {
+                  "outputs": {
+                    "exitCode": 0,
+                    "stdio": {
+                      "stdout": "/Users/erin/Desktop/Personal/wth-task-manager-api-documentation",
+                      "stderr": ""
+                    }
+                  },
+                  "result": "PASS",
+                  "resultDescription": "Executed command.",
+                  "description": "Check current directory",
+                  "runShell": {
+                    "command": "pwd",
+                    "exitCodes": [
+                      0
+                    ],
+                    "maxVariation": 0
+                  },
+                  "variables": {},
+                  "stepId": "af306273-52c0-4cfd-a8d7-c13dbc611bc1"
+                },
+                {
+                  "outputs": {
+                    "exitCode": 0,
+                    "stdio": {
+                      "stdout": "total 3416\ndrwxr-xr-x@   51 erin  staff     1632 Feb 23 13:41 .\ndrwxr-xr-x@   32 erin  staff     1024 Dec 19 09:07 ..\n-rw-r--r--@    1 erin  staff     6148 Oct 28 06:19 .DS_Store\n-rw-r--r--@    1 erin  staff     1650 Feb  2 10:21 .archbee.yaml",
+                      "stderr": ""
+                    }
+                  },
+                  "result": "PASS",
+                  "resultDescription": "Executed command.",
+                  "description": "List files in current directory",
+                  "runShell": {
+                    "command": "ls -la | head -5",
+                    "exitCodes": [
+                      0
+                    ],
+                    "maxVariation": 0
+                  },
+                  "variables": {},
+                  "stepId": "e18d2951-fd74-44e3-aa5e-59b4fe8383b9"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "steps": [
+        {
+          "description": "Verify Node.js is installed",
+          "action": "runShell",
+          "command": "node --version",
+          "exitCodes": [0]
+        },
+        {
+          "description": "Verify npm is installed",
+          "action": "runShell",
+          "command": "npm --version",
+          "exitCodes": [0]
+        },
+        {
+          "description": "Check current directory",
+          "action": "runShell",
+          "command": "pwd",
+          "exitCodes": [0]
+        },
+        {
+          "description": "List files in current directory",
+          "action": "runShell",
+          "command": "ls -la | head -5",
+          "exitCodes": [0]
+        }
+      ]
+    }
+  ]
+}

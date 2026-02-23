@@ -1,0 +1,33 @@
+{
+  "tests": [
+    {
+      "steps": [
+        {
+          "description": "Load environment variables from .env file",
+          "action": "setVariables",
+          "path": ".env"
+        },
+        {
+          "description": "Verify homepage is accessible",
+          "action": "checkLink",
+          "url": "$API_BASE_URL"
+        },
+        {
+          "description": "Verify authentication page loads",
+          "action": "checkLink",
+          "url": "$API_BASE_URL/docs/api/authentication"
+        },
+        {
+          "description": "Verify tasks page loads",
+          "action": "checkLink",
+          "url": "$API_BASE_URL/docs/api/tasks"
+        },
+        {
+          "description": "Verify users page loads",
+          "action": "checkLink",
+          "url": "$API_BASE_URL/docs/api/users"
+        }
+      ]
+    }
+  ]
+}
