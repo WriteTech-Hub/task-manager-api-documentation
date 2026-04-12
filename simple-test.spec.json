@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "steps": [
+        {
+          "description": "Go to the documentation",
+          "goTo": "https://task-manager-api-documentation.vercel.app/"
+        },
+        {
+          "description": "Find the main heading",
+          "find": "Task Manager API"
+        },
+        {
+          "description": "Take a screenshot",
+          "screenshot": "doc-detective-test.png"
+        }
+      ]
+    }
+  ]
+}

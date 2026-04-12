@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/doc-detective/doc-detective/main/schemas/jsonSchema.json",
+  "tests": [
+    {
+      "id": "capture-authentication-page",
+      "description": "Capture screenshot of Authentication API page",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "https://task-manager-api-documentation.vercel.app/docs/api/authentication"
+        },
+        {
+          "action": "wait",
+          "duration": 2000,
+          "description": "Wait for page to fully render"
+        },
+        {
+          "action": "saveScreenshot",
+          "path": "tests/results/authentication-api-page.png",
+          "description": "Save full page screenshot"
+        }
+      ]
+    },
+    {
+      "id": "capture-tasks-api-table",
+      "description": "Capture screenshot of Tasks API endpoints table",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "https://task-manager-api-documentation.vercel.app/docs/api/tasks"
+        },
+        {
+          "action": "find",
+          "selector": "table",
+          "description": "Locate the endpoints table"
+        },
+        {
+          "action": "saveScreenshot",
+          "path": "tests/results/tasks-endpoints-table.png",
+          "description": "Capture the table"
+        }
+      ]
+    },
+    {
+      "id": "capture-users-api",
+      "description": "Capture Users API page",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "https://task-manager-api-documentation.vercel.app/docs/api/users"
+        },
+        {
+          "action": "wait",
+          "duration": 2000
+        },
+        {
+          "action": "saveScreenshot",
+          "path": "tests/results/users-api-page.png"
+        }
+      ]
+    }
+  ]
+}

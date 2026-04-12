@@ -1,0 +1,53 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 1
+    },
+    "tests": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 1
+    },
+    "contexts": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 1
+    },
+    "steps": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    }
+  },
+  "specs": [
+    {
+      "result": "SKIPPED",
+      "specId": "b69b495d-327a-4f4c-b424-093927b3174c",
+      "tests": [
+        {
+          "result": "SKIPPED",
+          "testId": "2e54797f-7d5d-43e8-9342-938e020454e9",
+          "contexts": [
+            {
+              "result": "SKIPPED",
+              "resultDescription": "Failed to start context 'chrome' on 'mac'.",
+              "contextId": "797a1419-ee66-4d21-9048-5fc3beaad7e7",
+              "platform": "mac",
+              "browser": {
+                "name": "chrome",
+                "headless": true
+              },
+              "steps": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

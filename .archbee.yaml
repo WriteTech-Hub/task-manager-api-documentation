@@ -1,0 +1,63 @@
+# Define the root directory containing your documentation
+root: ./docs
+
+# Structure configuration
+structure:
+  # Summary file defines the navigation structure in Archbee
+  summary: summary.md
+  
+  # Assets folder (relative to root/docs)
+  assets: assets
+  
+  # OpenAPI/Swagger configuration options
+  docTreeOptions:
+    # Enable "Try it out" feature in API docs
+    openApiTryIt: true
+    
+    # Show download button for OpenAPI spec file
+    showDownloadOpenApiFile: true
+    
+    # Create separate category for schemas
+    shouldCreateSchemaCategory: true
+    
+    # Create introduction page for API docs
+    shouldCreateIntro: true
+    
+    # Language examples for API endpoints
+    openApiLanguageExamples:
+      - value: javascript
+        label: JavaScript
+      - value: python
+        label: Python
+      - value: curl
+        label: cURL
+      - value: php
+        label: PHP
+
+# Auto-publish to production after each commit (set to false for manual publishing)
+publishSpace: false
+
+# Custom header includes (optional)
+headerIncludes: |
+  <!-- Add any custom scripts or meta tags here -->
+
+# Custom footer template (optional)
+footerTemplate: |
+  <div style="text-align: center; padding: 20px; color: #666;">
+    <p>© 2026 WriteTech Hub - Task Manager API Documentation</p>
+    <p>
+      <a href="https://writetechhub.org" target="_blank">Website</a> | 
+      <a href="https://github.com/WriteTech-Hub/task-tracker-app" target="_blank">GitHub</a>
+    </p>
+  </div>
+
+# Custom CSS (optional)
+customCSS: |
+  /* Custom styling for your documentation */
+  .code-block {
+    border-radius: 8px;
+  }
+  
+  .endpoint-badge {
+    font-weight: 600;
+  }

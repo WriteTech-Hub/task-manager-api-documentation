@@ -1,0 +1,90 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "tests": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "contexts": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "steps": {
+      "pass": 5,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    }
+  },
+  "specs": [
+    {
+      "result": "PASS",
+      "specId": "docs/test-detected-links-only.md",
+      "contentPath": "/Users/erin/Desktop/Personal/wth-task-manager-api-documentation/docs/test-detected-links-only.md",
+      "tests": [
+        {
+          "result": "PASS",
+          "testId": "c949f614-6308-4e74-9111-8aee35f6eccf",
+          "contexts": [
+            {
+              "result": "PASS",
+              "contextId": "39531fea-22a6-4ed8-8c26-43b63fd3859d",
+              "platform": "mac",
+              "steps": [
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/authentication"
+                  },
+                  "stepId": "bcc9e8d8-d079-4599-b72b-f305a18f9ac1"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/tasks"
+                  },
+                  "stepId": "911a949a-5a18-4344-94e7-620f058751a1"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/users"
+                  },
+                  "stepId": "67f7ecd5-9ab9-4d93-a56e-37f0dee0933d"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/intro"
+                  },
+                  "stepId": "707d81b4-c5f9-4578-9fb9-75f445e1fc04"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/"
+                  },
+                  "stepId": "bfff37eb-7b75-4b40-aa6e-4b8c7fa4b9c8"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 0,
+      "fail": 1,
+      "warning": 0,
+      "skipped": 0
+    },
+    "tests": {
+      "pass": 0,
+      "fail": 1,
+      "warning": 0,
+      "skipped": 0
+    },
+    "contexts": {
+      "pass": 0,
+      "fail": 1,
+      "warning": 0,
+      "skipped": 0
+    },
+    "steps": {
+      "pass": 0,
+      "fail": 1,
+      "warning": 0,
+      "skipped": 3
+    }
+  },
+  "specs": [
+    {
+      "result": "FAIL",
+      "specId": "7ce70734-08de-49ef-98c0-bfc9ba4724ba",
+      "tests": [
+        {
+          "result": "FAIL",
+          "testId": "87139fb9-5a33-4d42-879a-017f07be8352",
+          "detectSteps": true,
+          "contexts": [
+            {
+              "result": "FAIL",
+              "contextId": "8cf14ea0-59bf-43c9-9721-a8429fcbd0eb",
+              "platform": "mac",
+              "steps": [
+                {
+                  "result": "FAIL",
+                  "resultDescription": "Couldn't set variables. Invalid file.",
+                  "description": "Load environment variables from .env file",
+                  "loadVariables": "/Users/erin/Desktop/Personal/wth-task-manager-api-documentation/tests/advanced/.env",
+                  "stepId": "14179dcc-3543-4569-b17c-fef6836548de"
+                },
+                {
+                  "description": "Test using environment variable for URL",
+                  "httpRequest": {
+                    "method": "get",
+                    "url": "$API_BASE_URL",
+                    "request": {},
+                    "response": {},
+                    "statusCodes": [
+                      200
+                    ],
+                    "maxVariation": 0
+                  },
+                  "variables": {},
+                  "stepId": "703657ba-116d-447a-8078-9cea39e87a59",
+                  "result": "SKIPPED",
+                  "resultDescription": "Skipped due to previous failure in context."
+                },
+                {
+                  "description": "Test authentication page using variable",
+                  "httpRequest": {
+                    "method": "get",
+                    "url": "$API_BASE_URL/docs/api/authentication",
+                    "request": {},
+                    "response": {},
+                    "statusCodes": [
+                      200
+                    ],
+                    "maxVariation": 0
+                  },
+                  "variables": {},
+                  "stepId": "5d35b64f-7982-4fc5-bdd8-90fb286fef58",
+                  "result": "SKIPPED",
+                  "resultDescription": "Skipped due to previous failure in context."
+                },
+                {
+                  "description": "Test tasks page with variable",
+                  "httpRequest": {
+                    "method": "get",
+                    "url": "$API_BASE_URL/docs/api/tasks",
+                    "request": {},
+                    "response": {},
+                    "statusCodes": [
+                      200
+                    ],
+                    "maxVariation": 0
+                  },
+                  "variables": {},
+                  "stepId": "f8610a75-08d9-4a01-b292-35a1ac625575",
+                  "result": "SKIPPED",
+                  "resultDescription": "Skipped due to previous failure in context."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

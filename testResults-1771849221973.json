@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "tests": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "contexts": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "steps": {
+      "pass": 3,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    }
+  },
+  "specs": [
+    {
+      "result": "PASS",
+      "specId": "docs/test-inline-corrected.md",
+      "contentPath": "/Users/erin/Desktop/Personal/wth-task-manager-api-documentation/docs/test-inline-corrected.md",
+      "tests": [
+        {
+          "result": "PASS",
+          "testId": "4809065b-7270-4041-a27d-db014a525a2c",
+          "detectSteps": false,
+          "contexts": [
+            {
+              "result": "PASS",
+              "contextId": "99804e8b-7408-4a41-8bc9-49dac16b6b33",
+              "platform": "mac",
+              "steps": [
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/authentication"
+                  },
+                  "stepId": "40f56218-1752-48b1-8b66-63f466eb8607"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/tasks"
+                  },
+                  "stepId": "874c574b-7153-4e00-ab2f-25b99cfe030d"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "checkLink": {
+                    "url": "https://task-manager-api-documentation.vercel.app/docs/api/users"
+                  },
+                  "stepId": "e01dc8cc-1c13-4ce4-b12f-0a40e4eec374"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

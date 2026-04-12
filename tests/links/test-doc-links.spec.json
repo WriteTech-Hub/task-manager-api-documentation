@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "id": "verify-all-api-documentation-links",
+      "description": "Check that all API documentation pages are accessible",
+      "steps": [
+        {
+          "description": "Check Authentication API page",
+          "checkLink": "https://task-manager-api-documentation.vercel.app/docs/api/authentication"
+        },
+        {
+          "description": "Check Tasks API page",
+          "checkLink": "https://task-manager-api-documentation.vercel.app/docs/api/tasks"
+        },
+        {
+          "description": "Check Users API page",
+          "checkLink": "https://task-manager-api-documentation.vercel.app/docs/api/users"
+        },
+        {
+          "description": "Check Introduction page",
+          "checkLink": "https://task-manager-api-documentation.vercel.app/docs/intro"
+        }
+      ]
+    }
+  ]
+}

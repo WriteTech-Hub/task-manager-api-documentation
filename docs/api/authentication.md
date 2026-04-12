@@ -1,3 +1,5 @@
+> **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Markdown versions of all pages are available by appending `.md` to any URL.
+
 # Authentication API
 
 The Authentication API handles user registration, login, profile retrieval, and role-based access. All protected endpoints require a **JWT Bearer Token**, which must be included in the request headers as:
@@ -22,16 +24,16 @@ If the token is missing or invalid, the API will return a `401 Unauthorized` res
 
 | Method | Endpoint | Description | Auth Required |
 |--------|----------|-------------|---------------|
-| POST | `/register` | Register a new user | No |
-| POST | `/login` | Authenticate an existing user and get a token | No |
-| GET | `/me` | Get details of the logged-in user | Yes |
+| POST | `/api/auth/register` | Register a new user | No |
+| POST | `/api/auth/login` | Authenticate an existing user and get a token | No |
+| GET | `/profile` | Get details of the logged-in user | Yes |
 | POST | `/invite-admin` | Create a new admin user (admin-only route) | Yes (Admin) |
 
 ---
 
 ## 1. Register User
 
-**POST** `/register`
+**POST** `/api/auth/register`
 
 Registers a new user into the system.
 
@@ -63,7 +65,7 @@ Registers a new user into the system.
 
 ## 2. Login User
 
-**POST** `/login`
+**POST** `/api/auth/login`
 
 Authenticates a user and returns a JWT token required for accessing protected endpoints.
 
@@ -94,7 +96,7 @@ Authenticates a user and returns a JWT token required for accessing protected en
 
 ## 3. Get Current Authenticated User
 
-**GET** `/me`
+**GET** `/profile`
 
 Returns profile information of the currently logged-in user. This is useful for front-end applications to fetch user details after login.
 

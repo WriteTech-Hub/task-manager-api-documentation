@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type { PluginConfig } from '@docusaurus/types';
+
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -37,6 +39,21 @@ const config: Config = {
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap"
   ],
+  plugins: [
+  [
+    'docusaurus-plugin-llms',
+    {
+      generateLLMsTxt: true,
+      generateLLMsFullTxt: true,
+      generateMarkdownFiles: true,
+      docsDir: 'docs',
+      excludeImports: true,
+      removeDuplicateHeadings: true,
+      title: 'Task Manager API Documentation',
+      description: 'API reference for authentication, tasks, users, and reports for the Task Manager API.',
+    },
+  ],
+],
 
   presets: [
     [

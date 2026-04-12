@@ -1,3 +1,5 @@
+> **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Markdown versions of all pages are available by appending `.md` to any URL.
+
 # Users API
 
 The Users API provides endpoints for managing user profiles, roles, and listings within the project management system. This includes retrieving user details, listing team members, updating profile information, and (for admins) managing user roles.

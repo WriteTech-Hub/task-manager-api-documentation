@@ -1,0 +1,53 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 1
+    },
+    "tests": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 1
+    },
+    "contexts": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 1
+    },
+    "steps": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    }
+  },
+  "specs": [
+    {
+      "result": "SKIPPED",
+      "specId": "08a3e24c-0ce0-4305-91f3-01cd64da3cd8",
+      "tests": [
+        {
+          "result": "SKIPPED",
+          "testId": "172149a4-5115-49e0-aafa-47f6903b007f",
+          "contexts": [
+            {
+              "result": "SKIPPED",
+              "resultDescription": "Failed to start context 'firefox' on 'mac'.",
+              "contextId": "e2e4b4fb-c56a-4b49-aa2e-d0a2e2f2c8fb",
+              "platform": "mac",
+              "browser": {
+                "name": "firefox",
+                "headless": true
+              },
+              "steps": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

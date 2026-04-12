@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/doc-detective/doc-detective/main/schemas/jsonSchema.json",
+  "tests": [
+    {
+      "id": "test-code-block-copy",
+      "description": "Verify code block copy functionality works",
+      "steps": [
+        {
+          "action": "goTo",
+          "url": "http://localhost:3000/docs/api/authentication"
+        },
+        {
+          "action": "find",
+          "selector": "pre code",
+          "description": "Find first code block"
+        },
+        {
+          "action": "find",
+          "selector": "button[class*='copyButton']",
+          "description": "Verify copy button exists",
+          "click": true
+        },
+        {
+          "action": "wait",
+          "duration": 500
+        }
+      ]
+    }
+  ]
+}
