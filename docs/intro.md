@@ -1,10 +1,10 @@
-> **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Markdown versions of all pages are available by appending `.md` to any URL.
-
 ---
 id: intro
 title: Welcome
 sidebar_position: 1
 ---
+
+> **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Markdown versions of all pages are available by appending `.md` to any URL.
 
 # Welcome to the Task Manager API Documentation
 

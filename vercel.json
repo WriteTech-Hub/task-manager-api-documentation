@@ -4,8 +4,8 @@
   "framework": "docusaurus-2",
   "rewrites": [
     {
-      "source": "/:path*.md",
-      "destination": "/:path*.md"
+      "source": "/(.*)\\.md",
+      "destination": "/$1.md"
     }
   ]
 }
