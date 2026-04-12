@@ -1,0 +1,16 @@
+url: https://task-manager-api-documentation.vercel.app
+checks:
+  - llms-txt-exists
+  - llms-txt-valid
+  - llms-txt-size
+  - llms-txt-links-resolve
+  - llms-txt-links-markdown
+  - llms-txt-directive
+  - markdown-url-support
+  - content-negotiation
+  - rendering-strategy
+  - page-size-html
+  - http-status-codes
+  - redirect-behavior
+  - cache-header-hygiene
+  - auth-gate-detection

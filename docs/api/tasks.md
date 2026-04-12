@@ -1,3 +1,5 @@
+> **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Markdown versions of all pages are available by appending `.md` to any URL.
+
 # Tasks API
 
 The Tasks API allows authenticated users to create, assign, update, track, and manage tasks. Tasks can include descriptions, due dates, assigned users, attachments, and progress tracking.
