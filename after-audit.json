@@ -1,0 +1,566 @@
+{
+  "url": "https://task-manager-api-documentation.vercel.app",
+  "timestamp": "2026-04-12T20:56:27.362Z",
+  "specUrl": "https://agentdocsspec.com/spec/",
+  "results": [
+    {
+      "id": "llms-txt-exists",
+      "category": "content-discoverability",
+      "status": "pass",
+      "message": "llms.txt found at 1 location(s)",
+      "details": {
+        "candidateUrls": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app/llms.txt",
+            "status": 200,
+            "redirected": false
+          },
+          {
+            "url": "https://task-manager-api-documentation.vercel.app/docs/llms.txt",
+            "status": 404,
+            "redirected": false
+          }
+        ],
+        "discoveredFiles": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app/llms.txt",
+            "content": "# Task Manager API Documentation\n\n> API reference for authentication, tasks, users, and reports for the Task Manager API.\n\nThis file contains links to documentation sections following the llmstxt.org standard.\n\n## Table of Contents\n\n- [Authentication API](https://writetechhub.org//docs/api/authentication.md): > **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Mark...\n- [Tasks API](https://writetechhub.org//docs/api/tasks.md): > **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Mark...\n- [Users API](https://writetechhub.org//docs/api/users.md): > **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Mark...\n- [Configuration for Code Snippets](https://writetechhub.org//docs/config.md): This file configures code snippets to be displayed in the documentation.\n- [Welcome to the Task Manager API Documentation](https://writetechhub.org//docs/intro.md): > **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Mark...\n- [API Documentation Reference](https://writetechhub.org//docs/test-detected-links-only.md): For complete API details, see our documentation:\n- [API Documentation Link Validation](https://writetechhub.org//docs/test-inline-corrected.md): [comment]: # 'test {\"detectSteps\": false}'\n",
+            "status": 200,
+            "redirected": false,
+            "crossHostRedirect": false
+          }
+        ],
+        "fetchErrors": 0,
+        "rateLimited": 0
+      }
+    },
+    {
+      "id": "llms-txt-valid",
+      "category": "content-discoverability",
+      "status": "pass",
+      "message": "llms.txt follows the proposed structure (H1, blockquote, heading-delimited link sections)",
+      "details": {
+        "validations": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app/llms.txt",
+            "hasH1": true,
+            "hasBlockquote": true,
+            "hasSections": true,
+            "linkCount": 11,
+            "issues": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "llms-txt-size",
+      "category": "content-discoverability",
+      "status": "pass",
+      "message": "llms.txt is 1,560 characters (under 50,000 threshold)",
+      "details": {
+        "sizes": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app/llms.txt",
+            "characters": 1560,
+            "bytes": 1560
+          }
+        ],
+        "thresholds": {
+          "pass": 50000,
+          "fail": 100000
+        }
+      }
+    },
+    {
+      "id": "llms-txt-links-resolve",
+      "category": "content-discoverability",
+      "status": "warn",
+      "message": "All 1 same-origin links resolve (8 total links) (7 external links also failed; may be bot-detection or rate-limiting)",
+      "details": {
+        "totalLinks": 8,
+        "sameOrigin": {
+          "total": 1,
+          "tested": 1,
+          "sampled": false,
+          "resolved": 1,
+          "broken": [],
+          "resolveRate": 100,
+          "fetchErrors": 0,
+          "rateLimited": 0
+        },
+        "crossOrigin": {
+          "total": 7,
+          "tested": 7,
+          "resolved": 0,
+          "broken": [
+            {
+              "url": "https://writetechhub.org//docs/api/authentication.md",
+              "status": 404
+            },
+            {
+              "url": "https://writetechhub.org//docs/api/tasks.md",
+              "status": 404
+            },
+            {
+              "url": "https://writetechhub.org//docs/api/users.md",
+              "status": 404
+            },
+            {
+              "url": "https://writetechhub.org//docs/config.md",
+              "status": 404
+            },
+            {
+              "url": "https://writetechhub.org//docs/intro.md",
+              "status": 0,
+              "error": "This operation was aborted"
+            },
+            {
+              "url": "https://writetechhub.org//docs/test-detected-links-only.md",
+              "status": 404
+            },
+            {
+              "url": "https://writetechhub.org//docs/test-inline-corrected.md",
+              "status": 404
+            }
+          ],
+          "fetchErrors": 1,
+          "rateLimited": 0
+        },
+        "testedLinks": 8,
+        "sampled": false,
+        "resolved": 1,
+        "broken": [
+          {
+            "url": "https://writetechhub.org//docs/api/authentication.md",
+            "status": 404
+          },
+          {
+            "url": "https://writetechhub.org//docs/api/tasks.md",
+            "status": 404
+          },
+          {
+            "url": "https://writetechhub.org//docs/api/users.md",
+            "status": 404
+          },
+          {
+            "url": "https://writetechhub.org//docs/config.md",
+            "status": 404
+          },
+          {
+            "url": "https://writetechhub.org//docs/intro.md",
+            "status": 0,
+            "error": "This operation was aborted"
+          },
+          {
+            "url": "https://writetechhub.org//docs/test-detected-links-only.md",
+            "status": 404
+          },
+          {
+            "url": "https://writetechhub.org//docs/test-inline-corrected.md",
+            "status": 404
+          }
+        ],
+        "resolveRate": 100,
+        "fetchErrors": 1,
+        "rateLimited": 0
+      }
+    },
+    {
+      "id": "llms-txt-links-markdown",
+      "category": "content-discoverability",
+      "status": "pass",
+      "message": "1/1 same-origin links point to markdown content (100%) (7 external links excluded)",
+      "details": {
+        "totalLinks": 8,
+        "testedLinks": 1,
+        "sampled": false,
+        "markdownLinks": 1,
+        "htmlLinks": 0,
+        "mdVariantsAvailable": 0,
+        "markdownRate": 100,
+        "fetchErrors": 0,
+        "rateLimited": 0,
+        "crossOriginExcluded": 7
+      }
+    },
+    {
+      "id": "llms-txt-directive",
+      "category": "content-discoverability",
+      "status": "fail",
+      "message": "No llms.txt directive found in any of 1 pages",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "sampled": false,
+        "foundCount": 0,
+        "notFoundCount": 1,
+        "nearTopCount": 0,
+        "buriedCount": 0,
+        "fetchErrors": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "found": false
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "markdown-url-support",
+      "category": "markdown-availability",
+      "status": "fail",
+      "message": "No pages support .md URLs (0/1 tested)",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "skippedPages": 0,
+        "sampled": false,
+        "mdSupported": 0,
+        "mdUnsupported": 1,
+        "supportRate": 0,
+        "fetchErrors": 0,
+        "rateLimited": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "mdUrl": "https://task-manager-api-documentation.vercel.app/.md",
+            "supported": false,
+            "alreadyMd": false,
+            "status": 0
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "content-negotiation",
+      "category": "markdown-availability",
+      "status": "fail",
+      "message": "Server ignores Accept: text/markdown header (0/1 pages return markdown)",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "skippedPages": 0,
+        "sampled": false,
+        "markdownWithCorrectType": 0,
+        "markdownWithWrongType": 0,
+        "htmlOnly": 1,
+        "negotiationRate": 0,
+        "fetchErrors": 0,
+        "rateLimited": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "classification": "html",
+            "contentType": "text/html; charset=utf-8",
+            "status": 200
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "rendering-strategy",
+      "category": "page-size",
+      "status": "pass",
+      "message": "All 1 pages contain server-rendered content",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "sampled": false,
+        "serverRendered": 1,
+        "sparseContent": 0,
+        "spaShells": 0,
+        "fetchErrors": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "status": "pass",
+            "analysis": {
+              "hasContent": true,
+              "hasSpaMarkers": false,
+              "spaMarker": null,
+              "contentHeadings": 2,
+              "contentParagraphs": 1,
+              "codeBlocks": 0,
+              "hasMainContent": false,
+              "visibleTextLength": 377,
+              "htmlLength": 10958
+            }
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "page-size-markdown",
+      "category": "page-size",
+      "status": "skip",
+      "message": "Skipped: dependency check did not pass",
+      "dependsOn": [
+        "markdown-url-support",
+        "content-negotiation"
+      ]
+    },
+    {
+      "id": "page-size-html",
+      "category": "page-size",
+      "status": "pass",
+      "message": "All 1 pages convert under 50K chars (median 3K, 76% boilerplate)",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "sampled": false,
+        "median": 2636,
+        "max": 2636,
+        "avgBoilerplatePercent": 76,
+        "passBucket": 1,
+        "warnBucket": 0,
+        "failBucket": 0,
+        "fetchErrors": 0,
+        "rateLimited": 0,
+        "thresholds": {
+          "pass": 50000,
+          "fail": 100000
+        },
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "htmlCharacters": 10958,
+            "convertedCharacters": 2636,
+            "conversionRatio": 76,
+            "status": "pass"
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "content-start-position",
+      "category": "page-size",
+      "status": "fail",
+      "message": "1 of 1 pages have content starting past 50% (worst 79%)",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "sampled": false,
+        "medianPercent": 79,
+        "maxPercent": 79,
+        "passBucket": 0,
+        "warnBucket": 0,
+        "failBucket": 1,
+        "fetchErrors": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "contentStartChar": 2094,
+            "totalChars": 2636,
+            "contentStartPercent": 79,
+            "status": "fail"
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "tabbed-content-serialization",
+      "category": "content-structure",
+      "status": "pass",
+      "message": "No tabbed content detected across 1 pages",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "sampled": false,
+        "pagesWithTabs": 0,
+        "totalGroupsFound": 0,
+        "fetchErrors": 0,
+        "tabbedPages": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "tabGroups": [],
+            "totalTabbedChars": 0,
+            "status": "pass",
+            "source": "html"
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "section-header-quality",
+      "category": "content-structure",
+      "status": "pass",
+      "message": "No tabbed content found; header quality check not applicable"
+    },
+    {
+      "id": "markdown-code-fence-validity",
+      "category": "content-structure",
+      "status": "pass",
+      "message": "All 0 code fences properly closed across 1 pages",
+      "details": {
+        "pagesAnalyzed": 1,
+        "totalFences": 0,
+        "unclosedCount": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app/llms.txt",
+            "source": "llms-txt",
+            "fenceCount": 0,
+            "issues": [],
+            "status": "pass"
+          }
+        ]
+      }
+    },
+    {
+      "id": "http-status-codes",
+      "category": "url-stability",
+      "status": "pass",
+      "message": "All 1 pages return proper error codes for bad URLs",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "sampled": false,
+        "soft404Count": 0,
+        "correctErrorCount": 1,
+        "fetchErrors": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "testUrl": "https://task-manager-api-documentation.vercel.app/-afdocs-nonexistent-8f3a",
+            "status": 404,
+            "classification": "correct-error",
+            "redirected": false
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "redirect-behavior",
+      "category": "url-stability",
+      "status": "pass",
+      "message": "No redirects detected across 1 pages",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "sampled": false,
+        "noRedirectCount": 1,
+        "sameHostCount": 0,
+        "crossHostCount": 0,
+        "jsRedirectCount": 0,
+        "fetchErrors": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "status": 200,
+            "classification": "no-redirect"
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "llms-txt-freshness",
+      "category": "observability",
+      "status": "skip",
+      "message": "No page URLs found in llms.txt"
+    },
+    {
+      "id": "markdown-content-parity",
+      "category": "observability",
+      "status": "skip",
+      "message": "Skipped: dependency check did not pass",
+      "dependsOn": [
+        "markdown-url-support",
+        "content-negotiation"
+      ]
+    },
+    {
+      "id": "cache-header-hygiene",
+      "category": "observability",
+      "status": "pass",
+      "message": "All 2 endpoints have appropriate cache headers",
+      "details": {
+        "totalPages": 1,
+        "testedEndpoints": 2,
+        "sampled": false,
+        "passBucket": 2,
+        "warnBucket": 0,
+        "failBucket": 0,
+        "fetchErrors": 0,
+        "endpointResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app/llms.txt",
+            "cacheControl": "public, max-age=0, must-revalidate",
+            "maxAge": 0,
+            "sMaxAge": null,
+            "mustRevalidate": true,
+            "noCache": false,
+            "noStore": false,
+            "etag": "W/\"e5b383af1e0faffcc25cf301abc2b2d3\"",
+            "lastModified": "Sun, 12 Apr 2026 20:55:25 GMT",
+            "expires": null,
+            "effectiveMaxAge": 0,
+            "status": "pass"
+          },
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "cacheControl": "public, max-age=0, must-revalidate",
+            "maxAge": 0,
+            "sMaxAge": null,
+            "mustRevalidate": true,
+            "noCache": false,
+            "noStore": false,
+            "etag": "W/\"0c194f3ec27e817fc5294175b680d433\"",
+            "lastModified": "Sun, 12 Apr 2026 20:56:23 GMT",
+            "expires": null,
+            "effectiveMaxAge": 0,
+            "status": "pass"
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "auth-gate-detection",
+      "category": "authentication",
+      "status": "pass",
+      "message": "All 1 pages are publicly accessible",
+      "details": {
+        "totalPages": 1,
+        "testedPages": 1,
+        "sampled": false,
+        "accessible": 1,
+        "authRequired": 0,
+        "softAuthGate": 0,
+        "authRedirect": 0,
+        "ssoDomains": [],
+        "fetchErrors": 0,
+        "pageResults": [
+          {
+            "url": "https://task-manager-api-documentation.vercel.app",
+            "classification": "accessible",
+            "status": 200
+          }
+        ],
+        "discoveryWarnings": []
+      }
+    },
+    {
+      "id": "auth-alternative-access",
+      "category": "authentication",
+      "status": "skip",
+      "message": "All docs pages are publicly accessible; no alternative access paths needed"
+    }
+  ],
+  "summary": {
+    "total": 22,
+    "pass": 13,
+    "warn": 1,
+    "fail": 4,
+    "skip": 4,
+    "error": 0
+  }
+}
