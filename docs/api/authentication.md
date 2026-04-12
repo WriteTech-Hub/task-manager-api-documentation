@@ -1,5 +1,6 @@
 > **For AI agents:** A complete documentation index is available at [`/llms.txt`](https://task-manager-api-documentation.vercel.app/llms.txt). Markdown versions of all pages are available by appending `.md` to any URL.
 
+
 # Authentication API
 
 The Authentication API handles user registration, login, profile retrieval, and role-based access. All protected endpoints require a **JWT Bearer Token**, which must be included in the request headers as:
