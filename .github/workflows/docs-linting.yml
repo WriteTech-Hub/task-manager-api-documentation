@@ -1,0 +1,37 @@
+name: Docs linting
+
+on:
+  pull_request:
+    branches:
+      - main
+      - toyibat
+
+jobs:
+  prose-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed Markdown files
+        run: |
+          MODIFIED_FILES=$(git diff --diff-filter=AM --name-only \
+            "${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}" \
+            -- '*.md')
+          MODIFIED_FILES_CSV=$(echo "$MODIFIED_FILES" | paste -sd "," -)
+          echo "MODIFIED_FILES_CSV=$MODIFIED_FILES_CSV" >> $GITHUB_ENV
+
+      - name: Vale
+        if: ${{ env.MODIFIED_FILES_CSV != '' }}
+        uses: vale-cli/vale-action@v2.1.1
+        with:
+          separator: ","
+          files: ${{ env.MODIFIED_FILES_CSV }}
+          reporter: github-pr-review
+          filter_mode: diff_context
+          level: error
+          fail_on_error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
