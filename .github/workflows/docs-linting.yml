@@ -3,6 +3,7 @@ name: Docs linting
 on:
   pull_request:
     branches:
+      - main
       - toyibat
 
 jobs:
