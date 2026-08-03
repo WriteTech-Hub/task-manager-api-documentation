@@ -1,0 +1,35 @@
+name: Remind to review agent instructions
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - "README.md"
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const labels = await github.rest.issues.listLabelsOnIssue({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const alreadyLabeled = labels.data.some(l => l.name === 'review-agent-instructions');
+            if (!alreadyLabeled) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: ['review-agent-instructions'],
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: 'This PR touches the style guide or howtos. Check whether AGENTS.md and related instruction files still match. Remove the `review-agent-instructions` label once checked.',
+              });
+            }
